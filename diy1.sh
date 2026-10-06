@@ -40,7 +40,8 @@ merge_feed(){
 echo "开始 DIY1 配置……"
 echo "========================="
 
-#
+## luci-app-iptv
+merge_package main https://github.com/pbs05/openwrt-pon-userspace openwrt-packages luci-app-iptv
 
 echo "========================="
 echo " DIY1 配置完成……"
