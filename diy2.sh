@@ -40,6 +40,10 @@ merge_feed(){
 echo "开始 DIY2 配置……"
 echo "========================="
 
+## 修改luci-app-pon显示位置
+sed -i 's#network/pon#pon#g' feeds/pon_userspace/luci-app-pon/root/usr/share/luci/menu.d/luci-app-pon.json
+sed -i 's/85/31/g' feeds/pon_userspace/luci-app-pon/root/usr/share/luci/menu.d/luci-app-pon.json
+
 echo '# 启用 eBPF 支持
 CONFIG_DEVEL=y
 CONFIG_KERNEL_DEBUG_INFO=y
