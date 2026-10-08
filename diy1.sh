@@ -40,8 +40,8 @@ merge_feed(){
 echo "开始 DIY1 配置……"
 echo "========================="
 
-## luci-app-iptv
-merge_package main https://github.com/pbs05/openwrt-pon-userspace openwrt-packages luci-app-iptv
+ ### 修改显示为ponwrt
+sed -i 's/ponwrt/hg8532a/g' package/base-files/files/bin/config_generate
 
 echo "========================="
 echo " DIY1 配置完成……"
