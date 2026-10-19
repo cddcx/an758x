@@ -41,7 +41,7 @@ echo "开始 DIY1 配置……"
 echo "========================="
 
  ### 修改显示为hg5382a
-sed -i 's/ponwrt/hg5382a/g' package/base-files/files/bin/config_generate
+sed -i 's/ponwrt/ZN504XG-D/g' package/base-files/files/bin/config_generate
 
 echo "========================="
 echo " DIY1 配置完成……"
